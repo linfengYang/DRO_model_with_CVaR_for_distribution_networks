@@ -14,7 +14,7 @@ T = 24
 ST = sub * T
 history = []  # 历史数据
 M = 366  # 历史数据的数量
-# np.random.seed(678) # 随机种子
+np.random.seed(678) # 随机种子
 with open('france_original_rt.txt', 'r') as file:
     lines = file.readlines()
     modified_lines = [line[18:] for line in lines]
