@@ -121,8 +121,8 @@ def funcpd(beta ):
         gama=[]
         for i in range(ST):
             for l in range(L1+1):
-                if l!=0: gama.append( sum([max(history[j][i] - C_[i * (L1 + 1) + l], 0) for j in range(M)]) / M +1 )
-                else:gama.append( sum([max(history[j][i] - C_[i * (L1 + 1) + l], 0) for j in range(M)]) / M +1  )
+                gama.append( sum([max(history[j][i] - C_[i * (L1 + 1) + l], 0) for j in range(M)]) / M +1 )
+                
 
         # 模糊集矩阵化
         C1 = np.diag([1] * ST)
